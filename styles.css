@@ -4,20 +4,20 @@ body {
     background: #111;
     color: #f8f5f2;
     overflow-x: hidden;
-  }
+}
 
 header {
-    background: #111; /* mismo color que el fondo, sin franja */
+    background: #111;
     padding: 20px;
     text-align: center;
     position: relative;
     z-index: 2;
-  }
+}
 
 header img {
     max-width: 250px;  /* ajusta el tamaño del logo */
     height: auto;
-  }
+}
 
 .menu-container {
     display: grid;
@@ -28,14 +28,14 @@ header img {
     margin: auto;
     position: relative;
     z-index: 2;
-  }
+}
 
 .menu-section {
     background: #222;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  }
+}
 
 .section-title {
     font-size: 1.8rem;
@@ -44,7 +44,7 @@ header img {
     border-bottom: 3px solid #b8875c;
     display: inline-block;
     padding-bottom: 5px;
-  }
+}
 
 .item {
     display: flex;
@@ -53,21 +53,21 @@ header img {
     padding: 10px 0;
     font-size: 1.2rem;
     border-bottom: 1px dashed rgba(255,255,255,0.2);
-  }
+}
 
 .item:last-child {
     border-bottom: none;
-  }
+}
 
 .item-name {
     font-weight: bold;
     color: #fff;
-  }
+}
 
 .item-price {
     color: #b8875c;
     font-weight: bold;
-  }
+}
 
 .decor {
     position: absolute;
@@ -77,28 +77,28 @@ header img {
     background-position: center;
     opacity: 0.2;
     z-index: 1;
-  }
+}
 
 .decor.top-left {
     top: 20px;
     left: 20px;
     background-image: url("cafe.jpg");
-  }
+}
 
 .decor.top-right {
     top: 20px;
     right: 20px;
     background-image: url("frappe.jpg");
-  }
+}
 
 .decor.bottom-left {
     bottom: 20px;
     left: 20px;
     background-image: url("postre.jpg");
-  }
+}
 
 .decor.bottom-right {
     bottom: 20px;
     right: 20px;
     background-image: url("sandwich.jpg");
-  }
+}
