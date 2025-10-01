@@ -6,7 +6,6 @@ body {
     overflow-x: hidden;
   }
 
-  /* 🔹 Encabezado con logo */
 header {
     background: #111; /* mismo color que el fondo, sin franja */
     padding: 20px;
@@ -70,7 +69,6 @@ header img {
     font-weight: bold;
   }
 
-  /* 🎨 Imágenes decorativas alrededor */
 .decor {
     position: absolute;
     width: 200px;
