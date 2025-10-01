@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú La Lomita Cafetería</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      background: #111;
+      color: #f8f5f2;
+      overflow-x: hidden;
+    }
+
+    /* 🔹 Encabezado con logo */
+    header {
+      background: #111; /* mismo color que el fondo, sin franja */
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    header img {
+      max-width: 250px;  /* ajusta el tamaño del logo */
+      height: auto;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 30px;
+      max-width: 1400px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .menu-section {
+      background: #222;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: #b8875c;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #b8875c;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      border-bottom: 1px dashed rgba(255,255,255,0.2);
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .item-price {
+      color: #b8875c;
+      font-weight: bold;
+    }
+
+    /* 🎨 Imágenes decorativas alrededor */
+    .decor {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+      z-index: 1;
+    }
+
+    .decor.top-left {
+      top: 20px;
+      left: 20px;
+      background-image: url("cafe.jpg");
+    }
+
+    .decor.top-right {
+      top: 20px;
+      right: 20px;
+      background-image: url("frappe.jpg");
+    }
+
+    .decor.bottom-left {
+      bottom: 20px;
+      left: 20px;
+      background-image: url("postre.jpg");
+    }
+
+    .decor.bottom-right {
+      bottom: 20px;
+      right: 20px;
+      background-image: url("sandwich.jpg");
+    }
+  </style>
+</head>
+<body>
+  <!-- Imágenes decorativas alrededor -->
+  <div class="decor top-left"></div>
+  <div class="decor top-right"></div>
+  <div class="decor bottom-left"></div>
+  <div class="decor bottom-right"></div>
+
+  <!-- Logo en el encabezado -->
+  <header>
+    <img src="logo.png" alt="Logo La Lomita Cafetería">
+  </header>
+
+  <div class="menu-container">
+    <div class="menu-section">
+      <div class="section-title">Bebidas Calientes</div>
+      <div class="item"><span class="item-name">Café Americano</span> <span class="item-price">$2.50</span></div>
+      <div class="item"><span class="item-name">Capuchino</span> <span class="item-price">$3.50</span></div>
+      <div class="item"><span class="item-name">Latte</span> <span class="item-price">$3.75</span></div>
+      <div class="item"><span class="item-name">Espresso</span> <span class="item-price">$2.00</span></div>
+      <div class="item"><span class="item-name">Chocolate Caliente</span> <span class="item-price">$3.00</span></div>
+      <div class="item"><span class="item-name">Capuchino</span> <span class="item-price">$3.50</span></div>
+      <div class="item"><span class="item-name">Latte</span> <span class="item-price">$3.75</span></div>
+      <div class="item"><span class="item-name">Espresso</span> <span class="item-price">$2.00</span></div>
+      <div class="item"><span class="item-name">Chocolate Caliente</span> <span class="item-price">$3.00</span></div>
+    </div>
+
+    <div class="menu-section">
+      <div class="section-title">Bebidas Frías</div>
+      <div class="item"><span class="item-name">Frappé de Vainilla</span> <span class="item-price">$4.00</span></div>
+      <div class="item"><span class="item-name">Iced Coffee</span> <span class="item-price">$3.25</span></div>
+      <div class="item"><span class="item-name">Limonada Fría</span> <span class="item-price">$2.75</span></div>
+      <div class="item"><span class="item-name">Smoothie de Fresa</span> <span class="item-price">$4.50</span></div>
+      <div class="item"><span class="item-name">Té Helado</span> <span class="item-price">$2.50</span></div>
+      <div class="item"><span class="item-name">Iced Coffee</span> <span class="item-price">$3.25</span></div>
+      <div class="item"><span class="item-name">Limonada Fría</span> <span class="item-price">$2.75</span></div>
+      <div class="item"><span class="item-name">Smoothie de Fresa</span> <span class="item-price">$4.50</span></div>
+      <div class="item"><span class="item-name">Té Helado</span> <span class="item-price">$2.50</span></div>
+    </div>
+
+    <div class="menu-section">
+      <div class="section-title">Postres</div>
+      <div class="item"><span class="item-name">Croissant</span> <span class="item-price">$2.00</span></div>
+      <div class="item"><span class="item-name">Cheesecake</span> <span class="item-price">$3.75</span></div>
+      <div class="item"><span class="item-name">Brownie</span> <span class="item-price">$2.50</span></div>
+      <div class="item"><span class="item-name">Tarta de Manzana</span> <span class="item-price">$3.25</span></div>
+      <div class="item"><span class="item-name">Galletas Variadas</span> <span class="item-price">$1.50</span></div>
+      <div class="item"><span class="item-name">Cheesecake</span> <span class="item-price">$3.75</span></div>
+      <div class="item"><span class="item-name">Brownie</span> <span class="item-price">$2.50</span></div>
+      <div class="item"><span class="item-name">Tarta de Manzana</span> <span class="item-price">$3.25</span></div>
+      <div class="item"><span class="item-name">Galletas Variadas</span> <span class="item-price">$1.50</span></div>
+    </div>
+
+    <div class="menu-section">
+      <div class="section-title">Sandwiches</div>
+      <div class="item"><span class="item-name">Jamón y Queso</span> <span class="item-price">$4.00</span></div>
+      <div class="item"><span class="item-name">Club Sandwich</span> <span class="item-price">$5.50</span></div>
+      <div class="item"><span class="item-name">Panini de Pollo</span> <span class="item-price">$5.25</span></div>
+      <div class="item"><span class="item-name">Vegetariano</span> <span class="item-price">$4.75</span></div>
+      <div class="item"><span class="item-name">Atún</span> <span class="item-price">$4.50</span></div>
+      <div class="item"><span class="item-name">Club Sandwich</span> <span class="item-price">$5.50</span></div>
+      <div class="item"><span class="item-name">Panini de Pollo</span> <span class="item-price">$5.25</span></div>
+      <div class="item"><span class="item-name">Vegetariano</span> <span class="item-price">$4.75</span></div>
+      <div class="item"><span class="item-name">Atún</span> <span class="item-price">$4.50</span></div>
+    </div>
+  </div>
+</body>
+</html>
